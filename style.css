@@ -63,12 +63,49 @@ body.light {
   color: #6366f1;
 }
 
-.hero-right img {
-  width: 320px;
-  height: 320px;
-  border-radius: 20px;
-  object-fit: cover;
+.hero-right {
+  display: flex;
+  justify-content: center;
 }
+
+
+.hero-right img {
+  max-width: 360px;
+  width: 100%;
+  height: auto;              /* ✅ keeps full photo */
+  object-fit: contain;       /* ✅ no cropping */
+  border-radius: 20px;       /* soft card look */
+  background: white;         /* clean edge for PNG/JPG */
+  padding: 6px;              /* subtle frame */
+  box-shadow: 0 18px 50px rgba(99, 102, 241, 0.35);
+}
+
+
+.hero-buttons {
+  margin-top: 28px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-links {
+  margin-top: 16px;   /* ✅ THIS FIXES OVERLAP */
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero-links a {
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+.btn-primary,
+.btn-outline {
+  display: inline-block;
+  line-height: 1.2;
+}
+
 
 /* BUTTONS */
 .btn-primary {
