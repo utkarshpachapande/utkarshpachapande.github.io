@@ -1,196 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Utkarsh Pachapande | AI & Data Science</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <div class="profile-wrapper">
-    <img src="profile.jpg" alt="Utkarsh Pachapande">
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Utkarsh</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-left">
+    <h1>Utkarsh Pachapande</h1>
+    <h2>M.Tech Data Science</h2>
+    <p>
+      AI & Data Science enthusiast with strong foundations in Machine Learning,
+      Generative AI, and Data Structures. GATE 2024 (DA) & 2025 (DA) Qualified.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="Utkarsh_Pachapande_MTech_DataScience_Resume.pdf" class="btn-primary">Download Resume</a>
+      <a href="#contact" class="btn-outline">Contact Me</a>
+    </div>
+
+    <div class="hero-links">
+      <a href="mailto:udpachapande@gmail.com">Email</a>
+      <a href="https://github.com/utkarsh222004" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/utkarshpachapande" target="_blank">LinkedIn</a>
+    </div>
   </div>
 
-  <h1>Utkarsh Pachapande</h1>
-  <p>M.Tech Data Science | AI & Data Science Enthusiast</p>
+  <div class="hero-right">
+    <img src="profile.jpg" alt="Utkarsh Pachapande">
+  </div>
+</section>
 
-  <p>
-    <a href="mailto:udpachapande@gmail.com">Email</a> |
-    <a href="tel:+918306580141">Call</a> |
-    <a href="https://github.com/utkarsh222004" target="_blank">GitHub</a> |
-    <a href="https://www.linkedin.com/in/utkarshpachapande" target="_blank">LinkedIn</a>
-  </p>
-</header> 
-      
-  
-
-
-
-
-  
-<section>
+<!-- ABOUT -->
+<section id="about">
   <h2>About Me</h2>
   <p>
-    I am a passionate and goal-driven Data Science enthusiast currently pursuing an
-    M.Tech in Data Science at PICT. I have a strong foundation in Machine Learning,
-    Generative AI, and Data Structures, with hands-on experience in applying data
-    science techniques to real-world problems.
+    I am a passionate and goal-driven Data Science enthusiast currently pursuing
+    an M.Tech in Data Science at PICT. I have a strong foundation in Machine
+    Learning, Generative AI, and Data Structures.
   </p>
-
   <p>
-    I am proficient in Python for data analysis and machine learning, with practical
-    experience using libraries such as NumPy, Pandas, TensorFlow, and Keras. In
-    addition, I have working knowledge of Java and C++ for algorithmic
-    problem-solving and strengthening core data structure concepts.
+    I am proficient in Python with experience in NumPy, Pandas, TensorFlow,
+    and Keras, along with working knowledge of Java and C++ for algorithmic
+    problem-solving.
   </p>
-
   <p>
-    I have successfully qualified GATE 2024 (DA) and GATE 2025 (DA), reflecting
-    strong analytical ability and academic consistency. My internship experience
-    has further strengthened my ability to design, build, and evaluate data-driven
-    solutions for real-world applications.
-  </p>
-
-  <p>
-    I am actively seeking internship and job opportunities where I can further
-    enhance my expertise and contribute to impactful AI and data-driven projects.
+    I have successfully qualified GATE 2024 (DA) and GATE 2025 (DA) and gained
+    practical experience through internships and applied projects.
   </p>
 </section>
 
-<section>
+<!-- SKILLS -->
+<section id="skills">
   <h2>Skills</h2>
-  <ul>
-    <li>Python, SQL</li>
-    <li>Pandas, NumPy, Matplotlib</li>
-    <li>Machine Learning, Statistics</li>
-    <li>Git, Jupyter Notebook</li>
+  <ul class="skills-grid">
+    <li>Python</li>
+    <li>Machine Learning</li>
+    <li>Deep Learning</li>
+    <li>Generative AI</li>
+    <li>NumPy & Pandas</li>
+    <li>TensorFlow & Keras</li>
+    <li>Java & C++</li>
+    <li>SQL</li>
+    <li>Power BI</li>
   </ul>
 </section>
 
-<section>
+<!-- PROJECTS -->
+<section id="projects">
   <h2>Projects</h2>
+
   <div class="project">
     <h3>Object Detection using YOLOv3</h3>
-    <p>
-      Developed a real-time object detection system capable of identifying
-      more than 75 object classes using YOLOv3 and OpenCV. The system processes
-      live video streams and images to detect and localize objects with high
-      accuracy.
-    </p>
-    <p>
-      <strong>Tools & Technologies:</strong> Python, YOLOv3, OpenCV, Deep Learning
-    </p>
-    <p>
-      <strong>Applications:</strong> Surveillance systems and defense-related
-      scenarios.
-    </p>
-    <a href="#" target="_blank">View on GitHub</a>
+    <p>Real-time object detection system identifying 75+ classes using YOLOv3 and OpenCV.</p>
+    <p><strong>Tools:</strong> Python, YOLOv3, OpenCV</p>
   </div>
 
   <div class="project">
     <h3>Medical Insurance Cost Prediction</h3>
-    <p>
-      Built a machine learning regression model to predict medical insurance
-      costs based on customer health and demographic data. Performed data
-      preprocessing, feature engineering, and model evaluation to improve
-      prediction performance.
-    </p>
-    <p>
-      <strong>Tools & Technologies:</strong> Python, Pandas, NumPy, Scikit-learn,
-      Streamlit
-    </p>
-    <p>
-      <strong>Deployment:</strong> Integrated the model into an interactive
-      Streamlit web application demonstrating end-to-end ML deployment and
-      user-friendly UI design.
-    </p>
+    <p>Regression model deployed via Streamlit to predict insurance costs.</p>
     <a href="https://github.com/utkarsh222004/Medical_Insurance_Cost_Prediction_Model" target="_blank">View on GitHub</a>
   </div>
 
   <div class="project">
     <h3>Blinkit Sales Dashboard</h3>
-    <p>
-      Designed an interactive sales analytics dashboard for Blinkit using
-      Power BI to visualize key business metrics. Implemented filters, KPIs,
-      and dynamic visuals to support data-driven decision-making.
-    </p>
-    <p>
-      <strong>Tools & Technologies:</strong> Power BI, DAX, Data Transformation
-    </p>
-    <p>
-      <strong>Outcome:</strong> Generated actionable business insights through
-      effective data storytelling and visualization techniques.
-    </p>
-    <a href="#" target="_blank">View Dashboard</a>
+    <p>Interactive Power BI dashboard with KPIs and DAX-based analytics.</p>
   </div>
 </section>
 
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="cert-section">
+  <h2>Certifications</h2>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <img src="cert_langchain.jpg" alt="">
+      <p>Generative AI with LangChain</p>
+    </div>
+    <div class="cert-card">
+      <img src="cert_datascience_udemy.jpg" alt="">
+      <p>Data Science Bootcamp</p>
+    </div>
+    <div class="cert-card">
+      <img src="cert_coursera_python.jpg" alt="">
+      <p>Python Project for Data Science</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
 <section>
   <h2>Research Publication</h2>
-
   <div class="project">
     <h3>Grocast: Interactive Sales Forecasting Dashboard</h3>
-    <p>
-      Published a research article focused on interactive sales forecasting and
-      data visualization techniques for business decision-making.
-    </p>
-    <p>
-      <strong>Journal:</strong> International Research Journal on Advanced Engineering Hub (IRJAEH)
-    </p>
     <a href="https://irjaeh.com/index.php/journal/article/view/856/786" target="_blank">View Publication</a>
   </div>
 </section>
 
-
-<section>
+<!-- CONTACT -->
+<section id="contact">
   <h2>Contact</h2>
-
-  <p><strong>Email:</strong> udpachapande@gmail.com</p>
-  <p><strong>Phone:</strong> +91 8306580141</p>
-  <p><strong>Location:</strong> Pune, Maharashtra, India</p>
+  <p>Email: udpachapande@gmail.com</p>
+  <p>Phone: +91 8306580141</p>
+  <p>Pune, Maharashtra, India</p>
 </section>
-
-  <section class="cert-section">
-  <h2>Certifications</h2>
-  <!-- certificate cards here -->
-    <div class="cert-grid">
-
-    <div class="cert-card">
-      <a href="cert_langchain.jpg" target="_blank">
-        <img src="cert_langchain.jpg" alt="Generative AI with LangChain">
-      </a>
-      <p>Generative AI with LangChain & HuggingFace</p>
-    </div>
-
-    <div class="cert-card">
-      <a href="cert_datascience_udemy.jpg" target="_blank">
-        <img src="cert_datascience_udemy.jpg" alt="Data Science Bootcamp">
-      </a>
-      <p>Data Science Bootcamp – Udemy</p>
-    </div>
-
-    <div class="cert-card">
-      <a href="cert_coursera_python.jpg" target="_blank">
-        <img src="cert_coursera_python.jpg" alt="Python for Data Science">
-      </a>
-      <p>Python Project for Data Science – Coursera</p>
-    </div>
-
-    <div class="cert-card">
-      <a href="cert_ibm_python.jpg" target="_blank">
-        <img src="cert_ibm_python.jpg" alt="Python for Data Science AI">
-      </a>
-      <p>Python for Data Science, AI & Development</p>
-    </div>
-
-  </div>
-</section>
-
-
 
 <footer>
-  <p>© 2026 Utkarsh Pachapande</p>
+  © 2026 Utkarsh Pachapande
 </footer>
 
 </body>
