@@ -18,14 +18,14 @@ body.light {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
   position: sticky;
   top: 0;
   background: inherit;
+  padding: 22px 80px;
 }
 
-.logo {
-  font-size: 1.3rem;
+.navbar .logo {
+  font-size: 1.6rem;
   font-weight: 700;
   color: #6366f1;
 }
@@ -40,6 +40,8 @@ body.light {
   text-decoration: none;
   color: inherit;
 }
+
+
 
 #theme-toggle {
   background: #6366f1;
@@ -89,9 +91,9 @@ body.light {
 }
 
 .hero-links {
-  margin-top: 16px;   /* ✅ THIS FIXES OVERLAP */
+  margin-top: 18px;
   display: flex;
-  gap: 12px;
+  gap: 18px;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -99,7 +101,10 @@ body.light {
 .hero-links a {
   text-decoration: underline;
   font-size: 0.95rem;
+  color: #a5b4fc;
 }
+
+
 .btn-primary,
 .btn-outline {
   display: inline-block;
@@ -147,6 +152,19 @@ section {
   border-radius: 20px;
 }
 
+.skills-grid li {
+  background: rgba(139,92,246,0.12);
+  border: 1px solid rgba(139,92,246,0.3);
+  color: #e0e7ff;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.skills-grid li:hover {
+  transform: translateY(-4px);
+}
+
+
 body.light .skills-tags span {
   background: #e5e7eb;
 }
@@ -172,9 +190,9 @@ body.light .project {
 
 .cert-card {
   width: 260px;
-  background: #111827;
+  background: #0f172a;
   padding: 16px;
-  border-radius: 14px;
+  border-radius: 16px;
   transition: 0.3s;
 }
 
@@ -191,7 +209,17 @@ body.light .project {
 
 body.light .cert-card {
   background: #ffffff;
+  border: 1px solid #e5e7eb;
 }
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+
+
+
 
 /* FOOTER */
 footer {
