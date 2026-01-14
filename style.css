@@ -9,6 +9,24 @@ body {
   color: #eaeaf0;
 }
 
+body.light {
+  background: #f5f7fa;
+  color: #1e293b;
+}
+
+body.light .navbar,
+body.light footer {
+  background: #f5f7fa;
+}
+
+body.light .project,
+body.light .cert-card,
+body.light .skills-grid li {
+  background: #ffffff;
+  color: #1e293b;
+}
+
+
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -108,6 +126,17 @@ body {
   box-shadow: 0 20px 60px rgba(139,92,246,0.35);
 }
 
+#theme-toggle {
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
 /* SECTIONS */
 section {
   max-width: 1100px;
@@ -170,3 +199,42 @@ footer {
   background: #0b1020;
   color: #cbd5f5;
 }
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 50px 30px;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-right img {
+    margin: auto;
+    width: 260px;
+    height: 260px;
+  }
+
+  section {
+    padding: 50px 30px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
