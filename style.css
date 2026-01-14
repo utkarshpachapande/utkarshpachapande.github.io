@@ -46,10 +46,11 @@ section {
   align-items: center;
   position: sticky;
   top: 0;
+  width: 100%; /* Full width */
+  padding: 22px; /* Removed horizontal padding for full coverage */
   background: inherit;
-  padding: 22px 80px;
-  z-index: 100; /* Ensure it stays above content */
-  backdrop-filter: blur(10px); /* Subtle blur for modern look */
+  z-index: 100;
+  backdrop-filter: blur(10px);
 }
 
 .navbar .logo {
@@ -72,7 +73,7 @@ section {
 
 .nav-links a:hover {
   color: var(--primary);
-  transform: translateY(-2px); /* Subtle lift */
+  transform: translateY(-2px);
 }
 
 #theme-toggle {
@@ -91,12 +92,13 @@ section {
 }
 
 /* HERO */
+/* HERO */
 .hero {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   gap: 60px;
   padding: 90px 80px;
-  align-items: center; /* Better vertical alignment */
+  align-items: center;
 }
 
 .hero-left h1 {
@@ -152,14 +154,14 @@ section {
   height: auto;
   object-fit: contain;
   border-radius: 20px;
-  background: white;
+  background: linear-gradient(45deg, var(--primary), var(--accent)); /* Changed from white to gradient */
   padding: 6px;
   box-shadow: 0 18px 50px var(--shadow);
   transition: transform 0.3s ease;
 }
 
 .hero-right img:hover {
-  transform: scale(1.05); /* Subtle zoom on hover */
+  transform: scale(1.05);
 }
 
 /* BUTTONS */
