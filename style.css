@@ -722,18 +722,13 @@ body.light .cert-card {
 /* CONTACT */
 /* CONTACT SECTION */
 /* =====================================
-   CONTACT SECTION – CERTIFICATE STYLE
+   CONTACT SECTION – GUARANTEED APPLY
 ===================================== */
 
-/* SECTION */
+/* ---------- BASE (LIGHT MODE) ---------- */
 .contact-section {
   padding: 100px 60px;
   background: var(--bg-light);
-  transition: background var(--transition);
-}
-
-[data-theme="dark"] .contact-section {
-  background: var(--bg-dark);
 }
 
 .contact-container {
@@ -744,32 +739,14 @@ body.light .cert-card {
   gap: 60px;
 }
 
-/* =====================================
-   CONTACT CARD (MATCHES CERTIFICATES)
-===================================== */
+/* CARD (LIKE CERTIFICATES) */
 .contact-card {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.96),
-    rgba(248, 250, 252, 1)
-  );
+  background: #ffffff;
   border-radius: 22px;
   padding: 44px;
   box-shadow:
     0 24px 60px rgba(0, 0, 0, 0.08),
     0 0 0 1px rgba(99, 102, 241, 0.08);
-  transition: background var(--transition), box-shadow var(--transition);
-}
-
-[data-theme="dark"] .contact-card {
-  background: linear-gradient(
-    180deg,
-    rgba(30, 41, 59, 0.92),
-    rgba(2, 6, 23, 1)
-  );
-  box-shadow:
-    0 30px 80px rgba(0, 0, 0, 0.65),
-    0 0 0 1px rgba(139, 92, 246, 0.25);
 }
 
 /* HEADINGS */
@@ -784,31 +761,16 @@ body.light .cert-card {
   color: var(--text-light);
 }
 
-[data-theme="dark"] .contact-subtitle {
-  color: var(--text-dark);
-}
-
-/* =====================================
-   FORM INPUTS (INSET STYLE)
-===================================== */
+/* INPUTS */
 #contact-form input,
 #contact-form textarea {
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(30, 41, 59, 0.15);
+  background: #ffffff;
+  border: 1px solid rgba(30, 41, 59, 0.18);
   border-radius: 14px;
   padding: 15px 18px;
   margin-bottom: 18px;
   color: var(--text-light);
-  font-size: 0.95rem;
-  transition: border var(--transition), box-shadow var(--transition);
-}
-
-[data-theme="dark"] #contact-form input,
-[data-theme="dark"] #contact-form textarea {
-  background: rgba(2, 6, 23, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: var(--text-dark);
 }
 
 #contact-form input::placeholder,
@@ -823,9 +785,7 @@ body.light .cert-card {
   box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.18);
 }
 
-/* =====================================
-   SUBMIT BUTTON
-===================================== */
+/* BUTTON */
 #contact-form button {
   background: var(--primary);
   border: none;
@@ -834,28 +794,14 @@ body.light .cert-card {
   color: white;
   font-weight: 600;
   cursor: pointer;
-  transition: transform var(--transition), box-shadow var(--transition);
 }
 
 #contact-form button:hover {
+  box-shadow: 0 16px 40px rgba(99, 102, 241, 0.45);
   transform: translateY(-2px);
-  box-shadow: 0 16px 40px var(--shadow);
 }
 
-/* =====================================
-   SUCCESS MESSAGE
-===================================== */
-.success-message {
-  display: none;
-  margin-top: 20px;
-  color: #22c55e;
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-
-/* =====================================
-   QUICK CONNECT (CERTIFICATE ACTION CARDS)
-===================================== */
+/* QUICK CONNECT */
 .quick-contact {
   padding-top: 40px;
   display: flex;
@@ -864,13 +810,7 @@ body.light .cert-card {
 }
 
 .quick-contact h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
   color: var(--text-light);
-}
-
-[data-theme="dark"] .quick-contact h3 {
-  color: var(--text-dark);
 }
 
 .qc-btn {
@@ -878,30 +818,15 @@ body.light .cert-card {
   border-radius: 16px;
   text-align: center;
   font-weight: 600;
-  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid rgba(99, 102, 241, 0.18);
   color: var(--text-light);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.96),
-    rgba(248, 250, 252, 1)
-  );
-  border: 1px solid rgba(99, 102, 241, 0.15);
-  transition: transform var(--transition), box-shadow var(--transition);
-}
-
-[data-theme="dark"] .qc-btn {
-  background: linear-gradient(
-    180deg,
-    rgba(30, 41, 59, 0.92),
-    rgba(2, 6, 23, 1)
-  );
-  color: var(--text-dark);
-  border: 1px solid rgba(139, 92, 246, 0.25);
+  text-decoration: none;
 }
 
 .qc-btn:hover {
-  transform: translateY(-3px);
   box-shadow: 0 18px 45px rgba(99, 102, 241, 0.35);
+  transform: translateY(-3px);
 }
 
 /* LOCATION */
@@ -911,22 +836,61 @@ body.light .cert-card {
   color: #64748b;
 }
 
-[data-theme="dark"] .location {
+/* =====================================
+   DARK MODE (BODY.DARK)
+===================================== */
+
+body.dark .contact-section {
+  background: var(--bg-dark);
+}
+
+body.dark .contact-card {
+  background: linear-gradient(
+    180deg,
+    #1e293b,
+    #020617
+  );
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(139, 92, 246, 0.25);
+}
+
+body.dark .contact-subtitle,
+body.dark .quick-contact h3 {
+  color: var(--text-dark);
+}
+
+body.dark #contact-form input,
+body.dark #contact-form textarea {
+  background: #020617;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-dark);
+}
+
+body.dark .qc-btn {
+  background: linear-gradient(
+    180deg,
+    #1e293b,
+    #020617
+  );
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  color: var(--text-dark);
+}
+
+body.dark .location {
   color: #94a3b8;
 }
 
-/* =====================================
-   RESPONSIVE
-===================================== */
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .contact-container {
     grid-template-columns: 1fr;
   }
-
   .quick-contact {
     padding-top: 0;
   }
 }
+
 
 
 
