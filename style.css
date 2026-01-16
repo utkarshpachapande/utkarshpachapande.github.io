@@ -195,6 +195,61 @@ body.light .navbar ul li a:hover {
   transform: scale(1.05);
 }
 
+/* HERO CONTACT ICONS */
+.hero-contacts {
+  display: flex;
+  gap: 14px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.contact-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.contact-chip i {
+  font-size: 0.95rem;
+}
+
+/* Hover effect */
+.contact-chip:hover {
+  transform: translateY(-3px);
+  background: rgba(139, 92, 246, 0.25);
+  box-shadow: 0 8px 30px rgba(139, 92, 246, 0.5);
+  color: #ffffff;
+}
+
+/* Light mode */
+body.light .contact-chip {
+  background: #eef2ff;
+  color: #1e293b;
+  border-color: #c7d2fe;
+}
+
+body.light .contact-chip:hover {
+  background: #6366f1;
+  color: #ffffff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-contacts {
+    justify-content: center;
+  }
+}
+
+
 
 /* BUTTONS */
 .btn-primary {
