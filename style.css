@@ -720,14 +720,10 @@ body.light .cert-card {
 
 
 /* CONTACT */
-
-
-
-/* CONTACT INFO */
 /* CONTACT SECTION */
-/* ================================
-   CONTACT SECTION (THEME AWARE)
-================================ */
+/* =====================================
+   CONTACT SECTION – CERTIFICATE STYLE
+===================================== */
 
 /* SECTION */
 .contact-section {
@@ -736,7 +732,6 @@ body.light .cert-card {
   transition: background var(--transition);
 }
 
-/* DARK MODE */
 [data-theme="dark"] .contact-section {
   background: var(--bg-dark);
 }
@@ -749,29 +744,43 @@ body.light .cert-card {
   gap: 60px;
 }
 
-/* FORM CARD */
+/* =====================================
+   CONTACT CARD (MATCHES CERTIFICATES)
+===================================== */
 .contact-card {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 40px;
-  border: 1px solid rgba(30, 41, 59, 0.1);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
-  transition: background var(--transition), border var(--transition);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.96),
+    rgba(248, 250, 252, 1)
+  );
+  border-radius: 22px;
+  padding: 44px;
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(99, 102, 241, 0.08);
+  transition: background var(--transition), box-shadow var(--transition);
 }
 
 [data-theme="dark"] .contact-card {
-  background: var(--secondary);
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  background: linear-gradient(
+    180deg,
+    rgba(30, 41, 59, 0.92),
+    rgba(2, 6, 23, 1)
+  );
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.65),
+    0 0 0 1px rgba(139, 92, 246, 0.25);
 }
 
+/* HEADINGS */
 .contact-card h2 {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
+  font-weight: 700;
   color: var(--primary);
 }
 
 .contact-subtitle {
-  margin: 10px 0 30px;
+  margin: 12px 0 34px;
   color: var(--text-light);
 }
 
@@ -779,15 +788,17 @@ body.light .cert-card {
   color: var(--text-dark);
 }
 
-/* INPUTS */
+/* =====================================
+   FORM INPUTS (INSET STYLE)
+===================================== */
 #contact-form input,
 #contact-form textarea {
   width: 100%;
-  background: transparent;
-  border: 1px solid rgba(30, 41, 59, 0.2);
-  border-radius: 10px;
-  padding: 14px 16px;
-  margin-bottom: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(30, 41, 59, 0.15);
+  border-radius: 14px;
+  padding: 15px 18px;
+  margin-bottom: 18px;
   color: var(--text-light);
   font-size: 0.95rem;
   transition: border var(--transition), box-shadow var(--transition);
@@ -795,27 +806,30 @@ body.light .cert-card {
 
 [data-theme="dark"] #contact-form input,
 [data-theme="dark"] #contact-form textarea {
-  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(2, 6, 23, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   color: var(--text-dark);
 }
 
 #contact-form input::placeholder,
 #contact-form textarea::placeholder {
-  color: #64748b;
+  color: #94a3b8;
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(99,102,241,0.25);
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.18);
 }
 
-/* SUBMIT BUTTON */
+/* =====================================
+   SUBMIT BUTTON
+===================================== */
 #contact-form button {
   background: var(--primary);
   border: none;
-  padding: 14px 30px;
+  padding: 14px 36px;
   border-radius: 999px;
   color: white;
   font-weight: 600;
@@ -825,18 +839,33 @@ body.light .cert-card {
 
 #contact-form button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px var(--shadow);
+  box-shadow: 0 16px 40px var(--shadow);
 }
 
-/* QUICK CONTACT */
+/* =====================================
+   SUCCESS MESSAGE
+===================================== */
+.success-message {
+  display: none;
+  margin-top: 20px;
+  color: #22c55e;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* =====================================
+   QUICK CONNECT (CERTIFICATE ACTION CARDS)
+===================================== */
 .quick-contact {
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 18px;
-  padding-top: 40px;
 }
 
 .quick-contact h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
   color: var(--text-light);
 }
 
@@ -845,50 +874,60 @@ body.light .cert-card {
 }
 
 .qc-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px;
-  border-radius: 14px;
+  padding: 16px;
+  border-radius: 16px;
+  text-align: center;
   font-weight: 600;
   text-decoration: none;
   color: var(--text-light);
-  background: transparent;
-  border: 1px solid rgba(30,41,59,0.2);
-  transition: background var(--transition), transform var(--transition), border var(--transition);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.96),
+    rgba(248, 250, 252, 1)
+  );
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  transition: transform var(--transition), box-shadow var(--transition);
 }
 
 [data-theme="dark"] .qc-btn {
+  background: linear-gradient(
+    180deg,
+    rgba(30, 41, 59, 0.92),
+    rgba(2, 6, 23, 1)
+  );
   color: var(--text-dark);
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid rgba(139, 92, 246, 0.25);
 }
 
 .qc-btn:hover {
-  transform: translateY(-2px);
-  background: rgba(99,102,241,0.1);
-  border-color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 18px 45px rgba(99, 102, 241, 0.35);
 }
 
 /* LOCATION */
 .location {
-  margin-top: 25px;
-  color: #64748b;
+  margin-top: 24px;
   font-size: 0.9rem;
+  color: #64748b;
 }
 
 [data-theme="dark"] .location {
   color: #94a3b8;
 }
 
-/* RESPONSIVE */
+/* =====================================
+   RESPONSIVE
+===================================== */
 @media (max-width: 900px) {
   .contact-container {
     grid-template-columns: 1fr;
   }
+
   .quick-contact {
     padding-top: 0;
   }
 }
+
 
 
 
