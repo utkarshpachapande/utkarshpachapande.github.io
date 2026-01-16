@@ -560,50 +560,57 @@ body.light .exp-tags span {
 
 
 /* SKILLS */
-.skills-tags {
+/* SKILLS WITH ICONS */
+.skills-icons {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
-/* Skill pill */
-.skills-tags span {
-  padding: 10px 18px;
+.skill-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 18px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #e5e7eb;
-  font-size: 0.95rem;
+
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+
+  color: #e0e7ff;
   font-weight: 500;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease,
-    background 0.25s ease;
+  font-size: 0.95rem;
+
+  cursor: default;
+  transition: all 0.25s ease;
 }
 
-/* Hover glow – SAME AS PROJECT CARDS */
-.skills-tags span:hover {
-  transform: translateY(-3px);
-  border-color: #8b5cf6;
-  background: rgba(139, 92, 246, 0.12);
-  box-shadow: 0 8px 28px rgba(139, 92, 246, 0.35);
-  cursor: default;
+/* ICON STYLE */
+.skill-pill i {
+  font-size: 1.1rem;
+  color: #8b5cf6;
+}
+
+/* HOVER EFFECT */
+.skill-pill:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 0 18px rgba(139, 92, 246, 0.45);
+  background: rgba(139, 92, 246, 0.2);
 }
 
 /* LIGHT MODE */
-body.light .skills-tags span {
-  background: #ffffff;
+body.light .skill-pill {
+  background: #eef2ff;
+  border-color: #c7d2fe;
   color: #1e293b;
-  border: 1px solid #e5e7eb;
 }
 
-body.light .skills-tags span:hover {
-  background: #eef2ff;
-  border-color: #6366f1;
-  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.25);
+body.light .skill-pill i {
+  color: #6366f1;
 }
+
 
 
 
