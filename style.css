@@ -726,14 +726,28 @@ body.light .cert-card {
   background: radial-gradient(circle at top, #111827, #020617);
 }
 
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+}
+
 
 /* FORM CARD */
 .contact-card {
-  background: rgba(17, 24, 39, 0.7);
-  border-radius: 18px;
-  padding: 40px;
-  box-shadow: 0 20px 60px rgba(139, 92, 246, 0.15);
-  position: relative;
+  position: relative; 
+
+  background: var(--secondary);
+  padding: 16px;
+  border-radius: 16px;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.contact-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 15px 40px var(--shadow);
 }
 
 .contact-card h2 {
@@ -779,6 +793,11 @@ body.light .cert-card {
 #contact-form button:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 40px rgba(139,92,246,0.5);
+}
+
+body.light .contact-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
 }
 
 /* SUCCESS MESSAGE */
@@ -840,6 +859,8 @@ body.light .cert-card {
   color: #94a3b8;
   font-size: 0.9rem;
 }
+
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
