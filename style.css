@@ -864,8 +864,8 @@ body.light .contact-card {
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .quick-contact-text {
-  margin: 30px 0 30px;
-  font-size: 20px;
+  margin: 50px 0 50px;
+  font-size: 24px;
   color: #767676;  <!-- #cbd5f5; -->
 }
 
