@@ -868,55 +868,79 @@ body.dark #contact-form textarea {
 /* =====================================
    QUICK CONNECT (CERTIFICATE CARDS)
 ===================================== */
-.quick-contact {
-  padding-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
+/* ===============================
+   QUICK CONNECT CARD (FIX)
+================================ */
 
-.quick-contact h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-light);
-}
-
-body.dark .quick-contact h3 {
-  color: var(--text-dark);
-}
-
-.qc-btn {
-  padding: 16px;
-  border-radius: 16px;
-  text-align: center;
-  font-weight: 600;
-  text-decoration: none;
-
+.quick-card {
   background: #ffffff;
-  color: var(--text-light);
+  border-radius: 22px;
+  padding: 40px;
+
   border: 1px solid rgba(99, 102, 241, 0.18);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(99, 102, 241, 0.06);
 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.qc-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 45px rgba(99, 102, 241, 0.35);
+.quick-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 35px 80px rgba(99, 102, 241, 0.25),
+    0 0 0 1px rgba(99, 102, 241, 0.25);
 }
 
-body.dark .qc-btn {
+/* DARK MODE */
+body.dark .quick-card {
   background: linear-gradient(
     180deg,
     #1e293b,
     #020617
   );
   border: 1px solid rgba(139, 92, 246, 0.35);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.75);
+}
+
+body.dark .quick-card:hover {
+  box-shadow:
+    0 40px 100px rgba(139, 92, 246, 0.45);
+}
+
+
+..qc-btn {
+  margin-top: 12px;
+  padding: 16px;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+
+  background: #f8fafc;
+  color: var(--text-light);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qc-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 45px rgba(99, 102, 241, 0.35);
+}
+
+/* DARK MODE */
+body.dark .qc-btn {
+  background: #020617;
   color: var(--text-dark);
+  border: 1px solid rgba(139, 92, 246, 0.35);
 }
 
 body.dark .qc-btn:hover {
-  box-shadow: 0 25px 60px rgba(139, 92, 246, 0.45);
+  box-shadow: 0 22px 55px rgba(139, 92, 246, 0.45);
 }
+
 
 /* =====================================
    LOCATION
