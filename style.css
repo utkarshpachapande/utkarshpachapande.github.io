@@ -726,13 +726,6 @@ body.light .cert-card {
   background: radial-gradient(circle at top, #111827, #020617);
 }
 
-.contact-container {
-  max-width: 1100px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 60px;
-}
 
 /* FORM CARD */
 .contact-card {
