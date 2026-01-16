@@ -611,6 +611,59 @@ body.light .skill-pill i {
   color: #6366f1;
 }
 
+/* SKILLS SECTION */
+.skills-section {
+  padding: 80px 60px;
+}
+
+.skills-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+/* Individual Skill Chip */
+.skill-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 18px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+
+  color: #e5e7eb;
+  font-weight: 500;
+  font-size: 0.95rem;
+
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+/* ICON STYLE */
+.skill-chip i {
+  font-size: 1.1rem;
+  color: #8b5cf6;
+}
+
+/* HOVER EFFECT (LIKE TOOLS & FRAMEWORKS) */
+.skill-chip:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 0 18px rgba(139, 92, 246, 0.45);
+  background: rgba(139, 92, 246, 0.12);
+}
+
+/* LIGHT MODE FIX */
+body.light .skill-chip {
+  background: #ffffff;
+  color: #1e293b;
+  border-color: rgba(139, 92, 246, 0.35);
+}
+
+
 
 
 
