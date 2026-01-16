@@ -865,6 +865,7 @@ body.light .contact-card {
 }
 .quick-contact-text {
   margin: 30px 0 30px;
+  font-size: 20px;
   color: #767676;  <!-- #cbd5f5; -->
 }
 
