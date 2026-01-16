@@ -722,15 +722,20 @@ body.light .cert-card {
 /* CONTACT */
 /* CONTACT SECTION */
 /* =====================================
-   CONTACT SECTION – GUARANTEED APPLY
+   CONTACT SECTION – CERTIFICATE MATCH
 ===================================== */
 
-/* ---------- BASE (LIGHT MODE) ---------- */
+/* SECTION BACKGROUND */
 .contact-section {
   padding: 100px 60px;
   background: var(--bg-light);
 }
 
+body.dark .contact-section {
+  background: var(--bg-dark);
+}
+
+/* LAYOUT */
 .contact-container {
   max-width: 1100px;
   margin: auto;
@@ -739,17 +744,51 @@ body.light .cert-card {
   gap: 60px;
 }
 
-/* CARD (LIKE CERTIFICATES) */
+/* =====================================
+   CONTACT CARD (CERTIFICATE CARD STYLE)
+===================================== */
 .contact-card {
+  position: relative;
   background: #ffffff;
   border-radius: 22px;
   padding: 44px;
+
+  /* CERTIFICATE BORDER + DEPTH */
+  border: 1px solid rgba(99, 102, 241, 0.18);
   box-shadow:
-    0 24px 60px rgba(0, 0, 0, 0.08),
-    0 0 0 1px rgba(99, 102, 241, 0.08);
+    0 20px 50px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(99, 102, 241, 0.06);
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-/* HEADINGS */
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 35px 80px rgba(99, 102, 241, 0.25),
+    0 0 0 1px rgba(99, 102, 241, 0.25);
+}
+
+/* DARK MODE */
+body.dark .contact-card {
+  background: linear-gradient(
+    180deg,
+    #1e293b,
+    #020617
+  );
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.75);
+}
+
+body.dark .contact-card:hover {
+  box-shadow:
+    0 40px 100px rgba(139, 92, 246, 0.45);
+}
+
+/* =====================================
+   TEXT
+===================================== */
 .contact-card h2 {
   font-size: 2.3rem;
   font-weight: 700;
@@ -757,20 +796,40 @@ body.light .cert-card {
 }
 
 .contact-subtitle {
-  margin: 12px 0 34px;
+  margin: 14px 0 36px;
   color: var(--text-light);
 }
 
-/* INPUTS */
+body.dark .contact-subtitle {
+  color: var(--text-dark);
+}
+
+/* =====================================
+   FORM INPUTS (CERTIFICATE INSET FEEL)
+===================================== */
 #contact-form input,
 #contact-form textarea {
   width: 100%;
-  background: #ffffff;
-  border: 1px solid rgba(30, 41, 59, 0.18);
+  background: #f8fafc;
+  border: 1px solid rgba(99, 102, 241, 0.2);
   border-radius: 14px;
   padding: 15px 18px;
   margin-bottom: 18px;
   color: var(--text-light);
+  font-size: 0.95rem;
+
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact-form textarea {
+  min-height: 120px;
+}
+
+body.dark #contact-form input,
+body.dark #contact-form textarea {
+  background: #020617;
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  color: var(--text-dark);
 }
 
 #contact-form input::placeholder,
@@ -782,11 +841,14 @@ body.light .cert-card {
 #contact-form textarea:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.18);
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.25);
 }
 
-/* BUTTON */
+/* =====================================
+   SEND BUTTON (CERTIFICATE CTA STYLE)
+===================================== */
 #contact-form button {
+  margin-top: 10px;
   background: var(--primary);
   border: none;
   padding: 14px 36px;
@@ -794,14 +856,18 @@ body.light .cert-card {
   color: white;
   font-weight: 600;
   cursor: pointer;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #contact-form button:hover {
-  box-shadow: 0 16px 40px rgba(99, 102, 241, 0.45);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 18px 45px rgba(99, 102, 241, 0.5);
 }
 
-/* QUICK CONNECT */
+/* =====================================
+   QUICK CONNECT (CERTIFICATE CARDS)
+===================================== */
 .quick-contact {
   padding-top: 40px;
   display: flex;
@@ -810,7 +876,13 @@ body.light .cert-card {
 }
 
 .quick-contact h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
   color: var(--text-light);
+}
+
+body.dark .quick-contact h3 {
+  color: var(--text-dark);
 }
 
 .qc-btn {
@@ -818,53 +890,18 @@ body.light .cert-card {
   border-radius: 16px;
   text-align: center;
   font-weight: 600;
-  background: #ffffff;
-  border: 1px solid rgba(99, 102, 241, 0.18);
-  color: var(--text-light);
   text-decoration: none;
+
+  background: #ffffff;
+  color: var(--text-light);
+  border: 1px solid rgba(99, 102, 241, 0.18);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .qc-btn:hover {
-  box-shadow: 0 18px 45px rgba(99, 102, 241, 0.35);
-  transform: translateY(-3px);
-}
-
-/* LOCATION */
-.location {
-  margin-top: 24px;
-  font-size: 0.9rem;
-  color: #64748b;
-}
-
-/* =====================================
-   DARK MODE (BODY.DARK)
-===================================== */
-
-body.dark .contact-section {
-  background: var(--bg-dark);
-}
-
-body.dark .contact-card {
-  background: linear-gradient(
-    180deg,
-    #1e293b,
-    #020617
-  );
-  box-shadow:
-    0 30px 80px rgba(0, 0, 0, 0.7),
-    0 0 0 1px rgba(139, 92, 246, 0.25);
-}
-
-body.dark .contact-subtitle,
-body.dark .quick-contact h3 {
-  color: var(--text-dark);
-}
-
-body.dark #contact-form input,
-body.dark #contact-form textarea {
-  background: #020617;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: var(--text-dark);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(99, 102, 241, 0.35);
 }
 
 body.dark .qc-btn {
@@ -873,15 +910,30 @@ body.dark .qc-btn {
     #1e293b,
     #020617
   );
-  border: 1px solid rgba(139, 92, 246, 0.25);
+  border: 1px solid rgba(139, 92, 246, 0.35);
   color: var(--text-dark);
+}
+
+body.dark .qc-btn:hover {
+  box-shadow: 0 25px 60px rgba(139, 92, 246, 0.45);
+}
+
+/* =====================================
+   LOCATION
+===================================== */
+.location {
+  margin-top: 24px;
+  font-size: 0.9rem;
+  color: #64748b;
 }
 
 body.dark .location {
   color: #94a3b8;
 }
 
-/* RESPONSIVE */
+/* =====================================
+   RESPONSIVE
+===================================== */
 @media (max-width: 900px) {
   .contact-container {
     grid-template-columns: 1fr;
@@ -890,6 +942,7 @@ body.dark .location {
     padding-top: 0;
   }
 }
+
 
 
 
