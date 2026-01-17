@@ -450,6 +450,28 @@ document.querySelector(".menu-toggle")
 </script>
 
 
+  <!-- menu mobile -->
+<script>
+const menuLinks = document.querySelectorAll(".nav-links a");
+const navMenu = document.querySelector(".nav-links");
+
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("show");
+  });
+});
+</script>
+  
+<script>
+const themeToggle = document.getElementById("theme-toggle");
+
+themeToggle?.addEventListener("click", () => {
+  document.querySelector(".nav-links")?.classList.remove("show");
+});
+</script>
+
+  
+
 
 
 
