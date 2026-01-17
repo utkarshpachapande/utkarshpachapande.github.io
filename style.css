@@ -59,11 +59,29 @@ section {
   color: var(--primary);
 }
 
-.nav-links {
-  display: flex;
-  gap: 30px;
-  list-style: none;
+                                                              /*    .nav-links {
+                                                                    display: flex;
+                                                                    gap: 30px;
+                                                                    list-style: none;
+                                                                  }
+                                                              */
+
+/* LIGHT MODE – MOBILE MENU BACKGROUND */
+body.light .nav-links {
+  background: #f8fafc;          /* light background */
 }
+
+body.light .nav-links a {
+  color: #1e293b;               /* dark readable text */
+}
+
+
+
+
+
+
+
+
 
 .nav-links a {
   text-decoration: none;
