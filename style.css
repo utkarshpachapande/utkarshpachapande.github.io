@@ -412,11 +412,22 @@ body.light .about-highlight p {
 
 
 /* SECTIONS */
+                                           /* section {
+                                              max-width: 1300px;
+                                              margin: auto;
+                                              padding: 80px;
+                                            }
+/* For mobile view */                                          */
 section {
-  max-width: 1300px;
-  margin: auto;
-  padding: 80px;
+  padding: 80px 60px;
 }
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 20px;
+  }
+}
+
 
 section h2 {
   font-size: 2.5rem;
@@ -1042,4 +1053,96 @@ body.light .social-links a:hover {
 body.light .footer-copy {
   color: #475569;
 }
+
+/* for mobile view*/
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: var(--primary);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--bg-dark);
+    flex-direction: column;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .hero-left h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-left h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-right img {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 500px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-chips {
+    justify-content: center;
+  }
+
+  .skill-chip {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-card,
+  .quick-contact {
+    padding: 18px;
+  }
+
+  .contact-card h2,
+  .quick-contact h2 {
+    font-size: 1.6rem;
+  }
+
+  .quick-contact-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .social-links a {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+}
+
 
