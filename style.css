@@ -412,22 +412,13 @@ body.light .about-highlight p {
 
 
 /* SECTIONS */
-                                           /* section {
-                                              max-width: 1300px;
-                                              margin: auto;
-                                              padding: 80px;
-                                            }
-/* For mobile view */                                          */
 section {
-  padding: 80px 60px;
+  max-width: 1300px;
   margin: auto;
+  padding: 80px;
 }
+                                   
 
-@media (max-width: 768px) {
-  section {
-    padding: 50px 20px;
-  }
-}
 
 
 section h2 {
