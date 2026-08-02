@@ -18,6 +18,10 @@
   <meta property="og:image" content="profile.jpg">
   <meta property="og:type" content="website">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 
  <link
@@ -39,7 +43,7 @@
 
 <!-- NAVBAR -->
 <nav class="navbar">
-  <div class="logo">Utkarsh Pachapande</div> 
+  <div class="logo">utkarsh@portfolio:~$</div>
   
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
@@ -66,6 +70,7 @@
 
 
   <div class="hero-left">
+    <span class="eyebrow">whoami</span>
     <h1>Utkarsh Pachapande</h1>
     <h2>M.Tech Data Science</h2>
 
@@ -110,17 +115,32 @@
   
 
   <div class="hero-right">
-    <img src="profile.jpg" alt="Utkarsh Pachapande">
+    <div class="hero-photo-frame">
+      <div class="term-bar">
+        <span class="term-dot red"></span>
+        <span class="term-dot yellow"></span>
+        <span class="term-dot green"></span>
+        <span class="term-title">profile.json</span>
+      </div>
+      <img src="profile.jpg" alt="Utkarsh Pachapande">
+      <div class="term-json">
+        {<br>
+        &nbsp;&nbsp;<span class="k">"role"</span>: <span class="s">"Data Scientist"</span>,<br>
+        &nbsp;&nbsp;<span class="k">"education"</span>: <span class="s">"M.Tech @ PICT"</span>,<br>
+        &nbsp;&nbsp;<span class="k">"status"</span>: <span class="s">"open_to_work"</span><span class="cur"></span><br>
+        }
+      </div>
+    </div>
   </div>
-</section
+</section>
 
 <!-- ABOUT -->
 <section id="about" class="about-section reveal">
   <div class="about-container">
 
-    <div class="about-header">
+    <div class="section-head">
+      <span class="eyebrow">cat about.md</span>
       <h2>About Me</h2>
-      <span class="about-line"></span>
     </div>
 
     <div class="about-content">
@@ -162,7 +182,10 @@
 
 <!-- EDUCATION -->
 <section id="education" class="reveal">
-  <h2>Education</h2>
+  <div class="section-head">
+    <span class="eyebrow">ls education/</span>
+    <h2>Education</h2>
+  </div>
 
   <div class="project">
     <h3>M.Tech in Data Science</h3>
@@ -183,7 +206,10 @@
 
 <!-- EXPERIENCE -->
 <section id="experience" class="reveal experience-section">
-  <h2 class="exp-title">Professional Journey</h2>
+  <div class="section-head">
+    <span class="eyebrow">tail -f experience.log</span>
+    <h2 class="exp-title">Professional Journey</h2>
+  </div>
   <p class="exp-subtitle">Work Experience</p>
 
   <div class="experience-grid">
@@ -267,7 +293,10 @@
 <!-- SKILLS -->
 
 <section id="skills" class="skills-section reveal">
-  <h2 class="section-title">Skills</h2>
+  <div class="section-head">
+    <span class="eyebrow">python -c "print(skills)"</span>
+    <h2 class="section-title">Skills</h2>
+  </div>
 
   <div class="skills-chips">
     <div class="skill-chip"><i class="devicon-python-plain"></i> Python</div>
@@ -297,7 +326,10 @@
 
 <!-- PROJECTS -->
 <section id="projects" class="reveal">
-  <h2 class="reveal">Projects</h2>
+  <div class="section-head">
+    <span class="eyebrow">./run_projects.sh</span>
+    <h2 class="reveal">Projects</h2>
+  </div>
   
   <!-- Project 1 -->
   <div class="project reveal">
@@ -461,7 +493,10 @@
 
 <!-- CERTIFICATIONS -->
 <section id="certifications" class="reveal">
-  <h2>Certifications</h2>
+  <div class="section-head">
+    <span class="eyebrow">ls certifications/</span>
+    <h2>Certifications</h2>
+  </div>
 
   <div class="cert-grid">
     <div class="cert-card">
@@ -514,12 +549,12 @@
 <!-- CONTACT -->
 <!-- CONTACT SECTION -->
 <section id="contact" class="reveal">     <!-- class="contact-section reveal"> -->
-                                                          <!-- <div class="contact-container"> -->
   <div class="contact-grid">
     <!-- LEFT: CONTACT FORM -->
     <div class="contact-card">
-      <center><h2>Contact</h2></center>
-      <p class="contact-subtitle">Let’s connect — I usually respond within 24 hours</p>
+      <span class="eyebrow">mail --compose</span>
+      <h2>Contact</h2>
+      <p class="contact-subtitle">Let's connect — I usually respond within 24 hours</p>
 
       <form id="contact-form"
         action="https://formspree.io/f/xqkrabcd"
@@ -541,7 +576,8 @@
 
     <!-- RIGHT: QUICK CONNECT -->
     <div class="quick-contact">
-      <center><h2>Quick Connect</h2></center>
+      <span class="eyebrow">whereis utkarsh</span>
+      <h2>Quick Connect</h2>
 
       <a href="https://wa.me/918306580141" target="_blank" class="qc-btn whatsapp">
         <span>WhatsApp</span>
