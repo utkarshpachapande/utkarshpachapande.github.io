@@ -1,13 +1,13 @@
 /* CSS Custom Properties for Consistent Colors */
 :root {
-  --primary: #6366f1; /* Indigo accent */
+  --primary: #d68a3c; /* Amber accent */
   --secondary: #1e293b; /* Dark slate */
-  --accent: #a5b4fc; /* Light indigo */
+  --accent: #f0c98a; /* Light amber */
   --bg-dark: #0b1020; /* Dark background */
   --bg-light: #f8fafc; /* Light background */
   --text-dark: #e5e7eb; /* Light text for dark mode */
   --text-light: #1e293b; /* Dark text for light mode */
-  --shadow: rgba(99, 102, 241, 0.35); /* Subtle shadow */
+  --shadow: rgba(214, 138, 60, 0.35); /* Subtle shadow */
   --transition: 0.3s ease; /* Smooth transition */
 }
 
@@ -139,8 +139,8 @@ body.light .nav-links a {
 /* Hover Glow */
 .navbar ul li a:hover {
   color: #ffffff;
-  background: rgba(139, 92, 246, 0.15);
-  box-shadow: 0 6px 22px rgba(139, 92, 246, 0.35);
+  background: rgba(224, 164, 88, 0.15);
+  box-shadow: 0 6px 22px rgba(224, 164, 88, 0.35);
 }
 
 /* LIGHT MODE */
@@ -150,8 +150,8 @@ body.light .navbar ul li a {
 
 body.light .navbar ul li a:hover {
   color: #1e293b;
-  background: #eef2ff;
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.25);
+  background: #fdf3e7;
+  box-shadow: 0 6px 20px rgba(214, 138, 60, 0.25);
 }
 
 
@@ -256,8 +256,8 @@ body.light .navbar ul li a:hover {
   gap: 8px;
   padding: 10px 14px;
   border-radius: 999px;
-  background: rgba(139, 92, 246, 0.15);
-  border: 1px solid rgba(139, 92, 246, 0.35);
+  background: rgba(224, 164, 88, 0.15);
+  border: 1px solid rgba(224, 164, 88, 0.35);
   color: #e5e7eb;
   text-decoration: none;
   font-size: 0.9rem;
@@ -272,20 +272,20 @@ body.light .navbar ul li a:hover {
 /* Hover effect */
 .contact-chip:hover {
   transform: translateY(-3px);
-  background: rgba(139, 92, 246, 0.25);
-  box-shadow: 0 8px 30px rgba(139, 92, 246, 0.5);
+  background: rgba(224, 164, 88, 0.25);
+  box-shadow: 0 8px 30px rgba(224, 164, 88, 0.5);
   color: #ffffff;
 }
 
 /* Light mode */
 body.light .contact-chip {
-  background: #eef2ff;
+  background: #fdf3e7;
   color: #1e293b;
-  border-color: #c7d2fe;
+  border-color: #f0d9b5;
 }
 
 body.light .contact-chip:hover {
-  background: #6366f1;
+  background: #d68a3c;
   color: #ffffff;
 }
 
@@ -361,7 +361,7 @@ body.light .contact-chip:hover {
   );
   padding: 48px 52px;
   border-radius: 22px;
-  border: 1px solid rgba(139, 92, 246, 0.18);
+  border: 1px solid rgba(224, 164, 88, 0.18);
 }
 
 .about-header {
@@ -373,7 +373,7 @@ body.light .contact-chip:hover {
 
 .about-header h2 {
   font-size: 2.2rem;
-  color: #8b5cf6;
+  color: #e0a458;
 }
 
 .about-line {
@@ -381,7 +381,7 @@ body.light .contact-chip:hover {
   height: 2px;
   background: linear-gradient(
     90deg,
-    #8b5cf6,
+    #e0a458,
     transparent
   );
 }
@@ -399,7 +399,7 @@ body.light .contact-chip:hover {
 }
 
 .about-content strong {
-  color: #c7d2fe;
+  color: #f0d9b5;
 }
 
 .about-highlight {
@@ -409,8 +409,8 @@ body.light .contact-chip:hover {
   margin-top: 26px;
   padding: 18px 22px;
   border-radius: 14px;
-  background: rgba(139, 92, 246, 0.12);
-  border: 1px solid rgba(139, 92, 246, 0.35);
+  background: rgba(224, 164, 88, 0.12);
+  border: 1px solid rgba(224, 164, 88, 0.35);
 }
 
 .about-highlight span {
@@ -434,12 +434,12 @@ body.light .about-content p {
 }
 
 body.light .about-content strong {
-  color: #4338ca;
+  color: #9a5f1f;
 }
 
 body.light .about-highlight {
-  background: #eef2ff;
-  border-color: #c7d2fe;
+  background: #fdf3e7;
+  border-color: #f0d9b5;
 }
 
 body.light .about-highlight p {
@@ -516,14 +516,14 @@ section h2 {
   background: linear-gradient(180deg, #0f172a, #020617);
   border-radius: 18px;
   padding: 28px;
-  border: 1px solid rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(224, 164, 88, 0.15);
   transition: transform 0.35s ease, box-shadow 0.35s ease, border 0.35s ease;
 }
 
 .experience-card:hover {
   transform: translateY(-8px);
-  border: 1px solid rgba(139, 92, 246, 0.6);
-  box-shadow: 0 25px 60px rgba(139, 92, 246, 0.25);
+  border: 1px solid rgba(224, 164, 88, 0.6);
+  box-shadow: 0 25px 60px rgba(224, 164, 88, 0.25);
 }
 
 .exp-header {
@@ -536,7 +536,7 @@ section h2 {
 
 .exp-role {
   font-weight: 600;
-  color: #8b5cf6;
+  color: #e0a458;
 }
 
 .exp-duration {
@@ -582,8 +582,8 @@ section h2 {
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.75rem;
-  background: rgba(139, 92, 246, 0.15);
-  border: 1px solid rgba(139, 92, 246, 0.35);
+  background: rgba(224, 164, 88, 0.15);
+  border: 1px solid rgba(224, 164, 88, 0.35);
   color: #e0e7ff;
 }
 
@@ -603,8 +603,8 @@ body.light .experience-card li {
 }
 
 body.light .exp-tags span {
-  background: #ede9fe;
-  color: #4c1d95;
+  background: #faf0e0;
+  color: #7a4a15;
 }
 
 
@@ -626,8 +626,8 @@ body.light .exp-tags span {
   padding: 12px 18px;
   border-radius: 999px;
 
-  background: rgba(139, 92, 246, 0.12);
-  border: 1px solid rgba(139, 92, 246, 0.35);
+  background: rgba(224, 164, 88, 0.12);
+  border: 1px solid rgba(224, 164, 88, 0.35);
 
   color: #e0e7ff;
   font-weight: 500;
@@ -640,25 +640,25 @@ body.light .exp-tags span {
 /* ICON STYLE */
 .skill-pill i {
   font-size: 1.1rem;
-  color: #8b5cf6;
+  color: #e0a458;
 }
 
 /* HOVER EFFECT */
 .skill-pill:hover {
   transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 0 18px rgba(139, 92, 246, 0.45);
-  background: rgba(139, 92, 246, 0.2);
+  box-shadow: 0 0 18px rgba(224, 164, 88, 0.45);
+  background: rgba(224, 164, 88, 0.2);
 }
 
 /* LIGHT MODE */
 body.light .skill-pill {
-  background: #eef2ff;
-  border-color: #c7d2fe;
+  background: #fdf3e7;
+  border-color: #f0d9b5;
   color: #1e293b;
 }
 
 body.light .skill-pill i {
-  color: #6366f1;
+  color: #d68a3c;
 }
 
 /* SKILLS SECTION */
@@ -683,7 +683,7 @@ body.light .skill-pill i {
   border-radius: 999px;
 
   background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(139, 92, 246, 0.35);
+  border: 1px solid rgba(224, 164, 88, 0.35);
 
   color: #e5e7eb;
   font-weight: 500;
@@ -696,21 +696,21 @@ body.light .skill-pill i {
 /* ICON STYLE */
 .skill-chip i {
   font-size: 1.1rem;
-  color: #8b5cf6;
+  color: #e0a458;
 }
 
 /* HOVER EFFECT (LIKE TOOLS & FRAMEWORKS) */
 .skill-chip:hover {
   transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 0 18px rgba(139, 92, 246, 0.45);
-  background: rgba(139, 92, 246, 0.12);
+  box-shadow: 0 0 18px rgba(224, 164, 88, 0.45);
+  background: rgba(224, 164, 88, 0.12);
 }
 
 /* LIGHT MODE FIX */
 body.light .skill-chip {
   background: #ffffff;
   color: #1e293b;
-  border-color: rgba(139, 92, 246, 0.35);
+  border-color: rgba(224, 164, 88, 0.35);
 }
 
 
@@ -757,15 +757,15 @@ body.light .project {
 
 /* GitHub button */
 .project-btn.github {
-  border: 1px solid #8b5cf6;
-  color: #8b5cf6;
+  border: 1px solid #e0a458;
+  color: #e0a458;
   background: transparent;
 }
 
 .project-btn.github:hover {
-  background: #8b5cf6;
+  background: #e0a458;
   color: #ffffff;
-  box-shadow: 0 0 14px rgba(139, 92, 246, 0.45);
+  box-shadow: 0 0 14px rgba(224, 164, 88, 0.45);
 }
 
 /* Live Demo button */
@@ -878,7 +878,7 @@ body.light .cert-card {
 
 .contact-card h2 {
   font-size: 2.2rem;
-  color: #8b5cf6;
+  color: #e0a458;
 }
 
 .contact-subtitle {
@@ -891,7 +891,7 @@ body.light .cert-card {
 #contact-form textarea {
   width: 100%;
   background: #0b1020; <!-- #020617; -->
-  border: 1px solid rgba(139, 92, 246, 0.3);
+  border: 1px solid rgba(224, 164, 88, 0.3);
   border-radius: 10px;
   padding: 14px 16px;
   margin-bottom: 16px;
@@ -917,12 +917,12 @@ body.light #contact-form textarea {
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
-  border-color: #8b5cf6;
+  border-color: #e0a458;
   box-shadow: 0 0 0 2px rgba(139,92,246,0.3);
 }
 
 #contact-form button {
-  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  background: linear-gradient(135deg, #e0a458, #d68a3c);
   border: none;
   padding: 14px 28px;
   border-radius: 30px;
@@ -991,7 +991,7 @@ body.light .quick-contact {
 }
 
 .quick-contact h2 {
-  color: #8b5cf6;
+  color: #e0a458;
   margin-bottom: 10px;
   font-size: 2.2rem
 }
@@ -1015,7 +1015,7 @@ body.light .quick-contact {
 
 .whatsapp { background: #22c55e; }
 .call { background: #3b82f6; }
-.email { background: #8b5cf6; }
+.email { background: #e0a458; }
 
 
 
@@ -1123,7 +1123,7 @@ footer {
   color: #ffffff;
   transform: translateY(-4px) scale(1.05);
   box-shadow: 0 0 18px rgba(139,92,246,0.65);
-  background: #8b5cf6;
+  background: #e0a458;
 }
 
 .footer-copy {
@@ -1146,7 +1146,7 @@ body.light .social-links a {
 }
 
 body.light .social-links a:hover {
-  background: #6366f1;
+  background: #d68a3c;
   color: white;
 }
 
@@ -1244,5 +1244,3 @@ body.light .footer-copy {
     font-size: 1.3rem;
   }
 }
-
-
